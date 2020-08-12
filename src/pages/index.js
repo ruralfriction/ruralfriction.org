@@ -1,13 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
+import Layout from '../components/layout'
 
-export default () => (
-  <div>
-    <nav>
-      <img src={"rural-friction-logo.svg"} alt="logo" />
-      <Link to="/about">About</Link>
-    </nav>
-
-    <main></main>
-  </div>
-);
+export default () => <Layout></Layout>;
