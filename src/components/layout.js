@@ -9,10 +9,8 @@ export default function Layout({ children }) {
         <Link to="/">
           <img src={"rural-friction-logo.svg"} alt="logo" />
         </Link>
-        <Link to="/about">About</Link>
-        <Link to="/events">Events</Link>
       </nav>
-      <main>{children}</main>
+      <main className={layoutStyles.main}>{children}</main>
     </div>
   )
 }
