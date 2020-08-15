@@ -1,25 +1,42 @@
 import React from 'react';
 import Layout from '../components/layout';
 
-export default () => (
-  <Layout>
-    <div>
-      <h1>About</h1>
-      <h2>Our principles</h2>
+export default function Index() {
+  return (
+    <Layout>
+      {({ Main, Footer }) => (
+        <>
+          <Main>
+            <section>
+              <p>
+                <span className="bold">Rural Friction</span> aims to subvert the
+                expansion of surveillance capitalism and to re-affirm humainty
+                of rural citizens.
+              </p>
+              <h2>Our principles</h2>
 
-      <ul>
-        <li>Free Expression</li>
-        <li>Security</li>
-        <li>Privacy</li>
-        <li>Creativity</li>
-        <li>Access to Knowledge</li>
-      </ul>
-    </div>
-    <div>
-      <h1>Posts</h1>
-    </div>
-    <div>
-      <h1>Events</h1>
-    </div>
-  </Layout>
-);
+              <ul>
+                <li>Free Expression /</li>
+                <li>Security /</li>
+                <li>Privacy /</li>
+                <li>Creativity /</li>
+                <li>Access to Knowledge /</li>
+              </ul>
+            </section>
+
+            <section>
+              <h1>Posts</h1>
+            </section>
+
+            <section>
+              <h1>Events</h1>
+            </section>
+          </Main>
+          <Footer>
+            <p>ruralfriction @ protonmail.com</p>
+          </Footer>
+        </>
+      )}
+    </Layout>
+  );
+}

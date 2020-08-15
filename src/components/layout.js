@@ -1,16 +1,20 @@
-import React from "react"
-import { Link } from "gatsby"
-import layoutStyles from "./layout.module.css"
+import React from 'react';
+import { Link } from 'gatsby';
+import './layout.module.css';
 
-export default function Layout({ children }) {
-  return (
-    <div>
-      <nav className={layoutStyles.nav}>
-        <Link to="/">
-          <img src={"rural-friction-logo.svg"} alt="logo" />
-        </Link>
-      </nav>
-      <main className={layoutStyles.main}>{children}</main>
-    </div>
-  )
+const Main = ({ children }) => (
+  <>
+    <nav>
+      <Link to="/">
+        <img src={'rural-friction-logo.svg'} alt="logo" />
+      </Link>
+    </nav>
+    <main>{children}</main>
+  </>
+);
+
+const Footer = ({ children }) => <footer>{children}</footer>;
+
+export default function Layout(props) {
+  return props.children({ Main, Footer });
 }

@@ -1,5 +1,5 @@
 
-.nav {
+nav {
   align-items: center;
   display: flex;
   font-size: 1.25rem;
@@ -8,13 +8,24 @@
   padding: 1rem;
 }
 
-.nav a {
+nav a {
   display: flex;
 }
 
-.main {
+main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-grow: 1;
   justify-content: space-between;
-  margin: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: right;
+}
+
+section {
+  flex-grow: 1;
+}
+
+footer {
+  text-align: center;
 }

@@ -2,14 +2,34 @@ html {
   background-image: url("../../static/background.svg");
   background-attachment: fixed;
   background-size: cover;
+
+  border: 2px;
   font-family: Courier new;
 }
 
 body {
   color: black;
+  font-size: 1.25rem;
   margin: 0;
+}
+
+html, body, #___gatsby, #gatsby-focus-wrapper {
+  height: 100%;
+}
+
+#gatsby-focus-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 a:visited {
   color: unset;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
 }
