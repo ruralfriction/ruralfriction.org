@@ -16,5 +16,5 @@ const Main = ({ children }) => (
 const Footer = ({ children }) => <footer>{children}</footer>;
 
 export default function Layout(props) {
-  return props.children({ Main, Footer });
+  return <>props.children({(Main, Footer)})</>;
 }

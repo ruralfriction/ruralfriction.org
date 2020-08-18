@@ -10,8 +10,8 @@ export default function Index() {
             <section>
               <p>
                 <span className="bold">Rural Friction</span> aims to subvert the
-                expansion of surveillance capitalism and to re-affirm humainty
-                of rural citizens.
+                the expansion of surveillance capitalism and to re-affirm
+                humanity of rural citizens.
               </p>
               <h2>Our principles</h2>
 
