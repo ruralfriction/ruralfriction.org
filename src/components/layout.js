@@ -15,6 +15,16 @@ const Main = ({ children }) => (
 
 const Footer = ({ children }) => <footer>{children}</footer>;
 
-export default function Layout(props) {
-  return <>props.children({(Main, Footer)})</>;
+export default class Layout extends React.Component {
+  static Main = Main;
+  static Footer = Footer;
+
+  render() {
+    return React.Children.map(this.props.children, child =>
+      React.cloneElement(child, {
+        Main: this.Main,
+        Footer: this.Footer,
+      }),
+    )
+  }
 }
